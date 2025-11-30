@@ -22,5 +22,21 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts"]
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src/*"],
+    "@/zustand/*": ["src/zustand/*"],
+    "@/routes/*": ["src/routes/*"],
+    "@/components/*": ["src/components/*"],
+    "@/pages/*": ["src/pages/*"],
+    "@/utils/*": ["src/utils/*"],
+  },
+  "include": [ 
+  "src/**/*.ts",
+  "src/**/*.tsx",
+  "src/**/*.js",
+  "src/**/*.jsx",
+  "vite.config.ts",
+  "vite-env.d.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
 }
